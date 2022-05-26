@@ -100,7 +100,7 @@
 					renderer.setClearColor(parameters.bkg_color, 1);
 				}
 				param_controls = new dat.GUI();
-				param_controls.add(parameters, 'ply_file', {'filter-seat': 'filter-back.ply', 'chair': 'filter-back.ply'}).name("PLY file").listen().onChange(load_ply_and_img);
+				param_controls.add(parameters, 'ply_file', {'filter-seat': 'filter-seat.ply', 'filter-back': 'filter-back.ply', 'filter-leg': 'filter-leg.ply', 'count-leg': 'count-leg.ply'}).name("PLY file").listen().onChange(load_ply_and_img);
 				// param_controls.add(parameters, 'point_size').min(0.001).max(1).step(0.001).name("Point Size").listen().onChange(update_params);
 				// param_controls.add(parameters, 'point_opacity').min(0.1).max(1).step(0.1).name('Opacity').listen().onChange(update_params);
 				// param_controls.addColor(parameters, 'bkg_color').name('Background color').listen().onChange(update_params);
